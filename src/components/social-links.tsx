@@ -20,7 +20,7 @@ export default function SocialLinks({
         isIconOnly
         variant="light"
       >
-        <BasilLinkedinSolid className="text-lg" />
+        <FormkitGithub className="text-lg" />
       </Button>
       <Button
         size="sm"
@@ -30,7 +30,7 @@ export default function SocialLinks({
         isIconOnly
         variant="light"
       >
-        <FormkitGithub className="text-lg" />
+        <BasilLinkedinSolid className="text-lg" />
       </Button>
       {/* <Button
         size="sm"
