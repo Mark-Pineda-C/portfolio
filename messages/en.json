@@ -1,0 +1,13 @@
+{
+  "Index": {
+    "header": {
+      "contact": "contact",
+      "english": "English",
+      "projects": "Projects",
+      "experience": "experience",
+      "spanish": "Spanish"
+    },
+    "hello": "Hello, my name is Mark Pineda",
+    "title": "Front-end developer"
+  }
+}

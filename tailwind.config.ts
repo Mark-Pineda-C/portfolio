@@ -9,16 +9,36 @@ const config: Config = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1.5rem",
+        sm: "3.5rem",
+        md: "4rem",
+        xl: "6rem",
+        "2xl": "11rem",
+      },
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        ubuntu: ["var(--font-ubuntu)"],
       },
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [
+    nextui({
+      themes: {
+        light: {
+          colors: {},
+        },
+        dark: {
+          colors: {},
+        },
+      },
+    }),
+    require("@midudev/tailwind-animations") satisfies Config,
+  ],
 };
 export default config;
 
