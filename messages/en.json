@@ -8,6 +8,8 @@
       "spanish": "Spanish"
     },
     "hello": "Hello, my name is Mark Pineda",
-    "title": "Front-end developer"
+    "title": "Front-end developer",
+    "more_info": "More Info",
+    "socials": "My socials"
   }
 }

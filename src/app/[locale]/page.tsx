@@ -40,13 +40,13 @@ export default function Home({ params: { locale } }: LocalizedPageProps) {
               {t("title")}
             </h1>
           </hgroup>
-          <CustomButton>Más información</CustomButton>
-          <SocialLinks>Mis redes</SocialLinks>
+          <CustomButton>{t("more_info")}</CustomButton>
+          <SocialLinks>{t("socials")}</SocialLinks>
         </div>
       </main>
-      <section className="container">
+      {/* <section className="container">
         <h1>alsdhalksdhasjd</h1>
-      </section>
+      </section> */}
     </>
   );
 }
