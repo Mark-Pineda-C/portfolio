@@ -10,6 +10,39 @@
     },
     "hello": "Hola, mi nombre es Mark pineda",
     "more_info": "Más información",
-    "socials": "Mis redes"
+    "socials": "Mis redes",
+    "about_title": "Sobre mi",
+    "about_me": "Soy un desarrollador de software enfocado en tecnologías web, con gran pasion por las tecnologias modernas, me gusta poder participar en proyectos que implican un desafio al conocimiento. Mi objetivo es aprender de forma continua y construir soluciones impactantes para compartirlas al mundo",
+    "cv": "Descarga mi CV",
+    "yoe": "Años de experiencia",
+    "projects_made": "Proyectos realizados",
+    "jobs": {
+      "0": {
+        "title": "Desarrollo Front-End",
+        "text": {
+          "0": "Implementación y desarrollo de las paginas web, landing pages y plataformas de los clientes.",
+          "1": "Optimizacion y migración de paginas de legado a nuevas tecnologias.",
+          "2": "Investigación y desarrollo de nuevas tecnologias para apoyo del sistema central de la empresa."
+        }
+      },
+      "1": {
+        "title": "Desarrollo Web",
+        "text": "Diseño, desarrollo e implementacion de aplicativo web de gestion de tramites"
+      },
+      "2": {
+        "title": "Desarrollo Movil",
+        "text": "Desarrollo de aplicaciones moviles para pequeñas empresas"
+      },
+      "today": "actualidad"
+    },
+    "latest_projects": "Mis ultimos proyectos",
+    "contact": {
+      "0": "¿Tienes alguna idea o proyecto en mente?",
+      "1": "¡Contactame!",
+      "name": "Nombre",
+      "message": "Mensaje",
+      "send": "Enviar",
+      "complete_error": "Completa este campo"
+    }
   }
 }

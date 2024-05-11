@@ -26,19 +26,7 @@ const config: Config = {
     },
   },
   darkMode: "class",
-  plugins: [
-    nextui({
-      themes: {
-        light: {
-          colors: {},
-        },
-        dark: {
-          colors: {},
-        },
-      },
-    }),
-    require("@midudev/tailwind-animations") satisfies Config,
-  ],
+  plugins: [nextui(), require("@midudev/tailwind-animations") satisfies Config],
 };
 export default config;
 

@@ -10,6 +10,8 @@ export default function CustomButton({
   return (
     <Button
       variant="solid"
+      as="a"
+      href="#about"
       className="bg-primary-700 hover:bg-primary-600 text-content1"
     >
       {children}

@@ -36,7 +36,6 @@ interface Props {
 export default function Header({ translations }: Props) {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
-  const [activeLink, setActiveLink] = useState("");
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -44,47 +43,24 @@ export default function Header({ translations }: Props) {
   }, []);
 
   return (
-    <Navbar onMenuOpenChange={setIsOpen}>
+    <Navbar onMenuOpenChange={setIsOpen} isMenuOpen={isOpen}>
       <NavbarBrand className="text-2xl">Mark Pineda</NavbarBrand>
       <NavbarContent
         className="max-md:hidden flex gap-4 font-ubuntu"
         justify="center"
       >
-        <NavbarItem
-          isActive={activeLink === "projects"}
-          className="data-[active=true]:text-primary data-[active=true]:font-normal duration-300 hover:text-primary"
-        >
-          <Link
-            className="capitalize"
-            onClick={() => setActiveLink("projects")}
-            href={`#projects`}
-          >
+        <NavbarItem className="duration-300 hover:text-primary">
+          <Link className="capitalize" href={`#projects`}>
             {translations.projects}
           </Link>
         </NavbarItem>
-        <NavbarItem
-          isActive={activeLink === "experience"}
-          className="data-[active=true]:text-primary data-[active=true]:font-normal duration-300 hover:text-primary"
-        >
-          <Link
-            className="capitalize"
-            onClick={() => setActiveLink("experience")}
-            href={`#experience`}
-          >
+        <NavbarItem className="duration-300 hover:text-primary">
+          <Link className="capitalize" href={`#experience`}>
             {translations.experience}
           </Link>
         </NavbarItem>
-        <NavbarItem
-          isActive={activeLink === "contact"}
-          className="data-[active=true]:text-primary data-[active=true]:font-normal duration-300 hover:text-primary"
-        >
-          <Link
-            className="capitalize"
-            onClick={() => setActiveLink("contact")}
-            href="#contact"
-            locale="en"
-            lang="en"
-          >
+        <NavbarItem className="duration-300 hover:text-primary">
+          <Link className="capitalize" href="#contact">
             {translations.contact}
           </Link>
         </NavbarItem>
@@ -134,41 +110,30 @@ export default function Header({ translations }: Props) {
           className="md:hidden"
         />
       </NavbarContent>
-      <NavbarMenu className="font-ubuntu">
-        <NavbarMenuItem
-          isActive={activeLink === "projects"}
-          className="data-[active=true]:text-primary data-[active=true]:font-normal duration-300 hover:text-primary"
-        >
+      <NavbarMenu className="flex flex-col items-center justify-center gap-10">
+        <NavbarMenuItem className="text-3xl animate-fade-in animate-delay-200">
           <Link
             className="capitalize"
-            onClick={() => setActiveLink("projects")}
             href={`#projects`}
+            onClick={() => setIsOpen(false)}
           >
             {translations.projects}
           </Link>
         </NavbarMenuItem>
-        <NavbarMenuItem
-          isActive={activeLink === "experience"}
-          className="data-[active=true]:text-primary data-[active=true]:font-normal duration-300 hover:text-primary"
-        >
+        <NavbarMenuItem className="text-3xl animate-fade-in animate-delay-400">
           <Link
             className="capitalize"
-            onClick={() => setActiveLink("experience")}
             href={`#experience`}
+            onClick={() => setIsOpen(false)}
           >
             {translations.experience}
           </Link>
         </NavbarMenuItem>
-        <NavbarMenuItem
-          isActive={activeLink === "contact"}
-          className="data-[active=true]:text-primary data-[active=true]:font-normal duration-300 hover:text-primary"
-        >
+        <NavbarMenuItem className="text-3xl animate-fade-in animate-delay-[600ms]">
           <Link
             className="capitalize"
-            onClick={() => setActiveLink("contact")}
             href="#contact"
-            locale="en"
-            lang="en"
+            onClick={() => setIsOpen(false)}
           >
             {translations.contact}
           </Link>

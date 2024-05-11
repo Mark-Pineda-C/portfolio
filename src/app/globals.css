@@ -2,3 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+:root,
+.light,
+[data-theme="light"] {
+  --nextui-primary-50: 212.5 92.31% 94.9%;
+  --nextui-primary-100: 211.84000000000003 92.45% 89.61%;
+  --nextui-primary-200: 211.84000000000003 92.45% 79.22%;
+  --nextui-primary-300: 212.24 92.45% 68.82%;
+  --nextui-primary-400: 212.14 92.45% 58.43%;
+  --nextui-primary-500: 212.01999999999998 100% 46.67%;
+  --nextui-primary-600: 212.14 100% 38.43%;
+  --nextui-primary-700: 212.24 100% 28.82%;
+  --nextui-primary-800: 211.84000000000003 100% 19.22%;
+  --nextui-primary-900: 211.84000000000003 100% 9.61%;
+  --nextui-primary-foreground: 0 0% 100%;
+  --nextui-primary: 212.24 100% 28.82%;
+}
+
+.dark,
+[data-theme="dark"] {
+  --nextui-primary-50: 211.84000000000003 100% 9.61%;
+  --nextui-primary-100: 211.84000000000003 100% 19.22%;
+  --nextui-primary-200: 212.24 100% 28.82%;
+  --nextui-primary-300: 212.14 100% 38.43%;
+  --nextui-primary-400: 212.01999999999998 100% 46.67%;
+  --nextui-primary-500: 212.14 92.45% 58.43%;
+  --nextui-primary-600: 212.24 92.45% 68.82%;
+  --nextui-primary-700: 211.84000000000003 92.45% 79.22%;
+  --nextui-primary-800: 211.84000000000003 92.45% 89.61%;
+  --nextui-primary-900: 212.5 92.31% 94.9%;
+  --nextui-primary-foreground: 0 0% 100%;
+  --nextui-primary: 211.84000000000003 92.45% 79.22%;
+}
+
+@media (min-width: 1024px) {
+  .swiper-pagination-bullet {
+    width: 16px !important;
+    border-radius: 0.5rem !important;
+    transition: 0.3s ease all;
+  }
+
+  .swiper-pagination-bullet-active,
+  .dark .swiper-pagination-bullet-active {
+    width: 24px !important;
+  }
+}
+.swiper-pagination-bullet-active,
+.dark .swiper-pagination-bullet-active {
+  background: hsl(var(--nextui-primary)) !important;
+}
+
+.dark .swiper-pagination-bullet {
+  background: #fff;
+}
+

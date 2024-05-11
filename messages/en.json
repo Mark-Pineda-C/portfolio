@@ -10,6 +10,39 @@
     "hello": "Hello, my name is Mark Pineda",
     "title": "Front-end developer",
     "more_info": "More Info",
-    "socials": "My socials"
+    "socials": "My socials",
+    "about_title": "About me",
+    "about_me": "I'm a software developer focused on web technologies, with great passion for modern technologies, I like to participate in projects that involve a challenge to knowledge. My goal is to continually learn and build impactful solutions to share with the world.",
+    "cv": "Download my CV",
+    "yoe": "Years of experience",
+    "projects_made": "Fulfilled projects",
+    "jobs": {
+      "0": {
+        "title": "Front-End Development",
+        "text": {
+          "0": "Implementation and development of web pages, landing pages and client platforms.",
+          "1": "Optimization and migration of legacy pages to new technologies.",
+          "2": "Research and development of new technologies to support the company's central system."
+        }
+      },
+      "1": {
+        "title": "Web development",
+        "text": "Design, development and implementation of a process management web application"
+      },
+      "2": {
+        "title": "Mobile Development",
+        "text": "Mobile application development for small businesses"
+      },
+      "today": "present"
+    },
+    "latest_projects": "My latest projects",
+    "contact": {
+      "0": "Do you have any idea or project in mind?",
+      "1": "Contact me!",
+      "name": "Name",
+      "message": "Message",
+      "send": "Send",
+      "complete_error": "Complete this field"
+    }
   }
 }
