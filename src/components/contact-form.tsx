@@ -2,10 +2,8 @@
 
 import { sendEmail } from "@/actions";
 import { Button, Input, Textarea } from "@nextui-org/react";
-import { useActionState, useMemo, useState } from "react";
 import { useFormStatus } from "react-dom";
-import { IcRoundCheck, SolarSendSquareBoldDuotone } from "./icons";
-
+import { IconamoonSendDuotone } from "./icons";
 interface ContactFormProps {
   translations: {
     name: string;
@@ -24,7 +22,6 @@ export default function ContactForm({ translations }: ContactFormProps) {
         variant="underlined"
         color="primary"
         name="email"
-        required
         isRequired
         type="email"
       />
@@ -36,7 +33,6 @@ export default function ContactForm({ translations }: ContactFormProps) {
         name="name"
       />
       <Textarea
-        required
         isRequired
         label={translations.message}
         variant="underlined"
@@ -64,10 +60,8 @@ const SubmitButton = ({ children }: SubmitButtonProps) => {
         type="submit"
         variant="solid"
         isLoading={pending}
-        className="bg-primary-700 hover:bg-primary-600 text-content1"
-        endContent={
-          <SolarSendSquareBoldDuotone className="rotate-180 text-xl text-primary-200" />
-        }
+        className="bg-primary-700 hover:bg-primary-600 text-background"
+        endContent={<IconamoonSendDuotone className="text-xl" />}
       >
         {children}
       </Button>

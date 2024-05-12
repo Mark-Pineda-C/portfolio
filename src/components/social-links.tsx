@@ -9,7 +9,7 @@ export default function SocialLinks({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex items-center relative gap-2 w-64">
+    <div className="flex items-center relative gap-4 w-64">
       <span>{children}</span>
       <div className="flex-1 h-px rounded-full bg-black dark:bg-white"></div>
       <Button

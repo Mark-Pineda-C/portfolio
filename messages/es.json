@@ -8,11 +8,11 @@
       "experience": "experiencia",
       "spanish": "Español"
     },
-    "hello": "Hola, mi nombre es Mark pineda",
-    "more_info": "Más información",
+    "hello": "Hola, mi nombre es Mark Pineda",
+    "more_info": "Conóceme",
     "socials": "Mis redes",
     "about_title": "Sobre mi",
-    "about_me": "Soy un desarrollador de software enfocado en tecnologías web, con gran pasion por las tecnologias modernas, me gusta poder participar en proyectos que implican un desafio al conocimiento. Mi objetivo es aprender de forma continua y construir soluciones impactantes para compartirlas al mundo",
+    "about_me": "Soy un desarrollador de software enfocado en tecnologías web, con gran pasion por las tecnologías modernas, me gusta poder participar en proyectos que implican un desafio al conocimiento. Mi objetivo es aprender de forma continua y construir soluciones impactantes para compartirlas al mundo.",
     "cv": "Descarga mi CV",
     "yoe": "Años de experiencia",
     "projects_made": "Proyectos realizados",
@@ -20,14 +20,14 @@
       "0": {
         "title": "Desarrollo Front-End",
         "text": {
-          "0": "Implementación y desarrollo de las paginas web, landing pages y plataformas de los clientes.",
-          "1": "Optimizacion y migración de paginas de legado a nuevas tecnologias.",
-          "2": "Investigación y desarrollo de nuevas tecnologias para apoyo del sistema central de la empresa."
+          "0": "Implementación y desarrollo de las paginas web, landing pages y plataformas de los clientes",
+          "1": "Optimización y migración de paginas de legado a nuevas tecnologías",
+          "2": "Investigación y desarrollo de nuevas tecnologías para apoyo del sistema central de la empresa"
         }
       },
       "1": {
         "title": "Desarrollo Web",
-        "text": "Diseño, desarrollo e implementacion de aplicativo web de gestion de tramites"
+        "text": "Diseño, desarrollo e implementación de aplicativo web de gestión de trámites"
       },
       "2": {
         "title": "Desarrollo Movil",
@@ -35,7 +35,7 @@
       },
       "today": "actualidad"
     },
-    "latest_projects": "Mis ultimos proyectos",
+    "latest_projects": "Mis últimos proyectos",
     "contact": {
       "0": "¿Tienes alguna idea o proyecto en mente?",
       "1": "¡Contactame!",
@@ -43,6 +43,11 @@
       "message": "Mensaje",
       "send": "Enviar",
       "complete_error": "Completa este campo"
-    }
+    },
+    "portfolio": "Portafolio"
+  },
+  "Metadata": {
+    "title": "Mark Pineda - Portafolio Personal",
+    "description": "Bienvenido a mi portafolio. Soy Mark Pineda, Desarrollador Front-End con más de 3 años de experiencia."
   }
 }

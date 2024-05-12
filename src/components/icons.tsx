@@ -148,7 +148,7 @@ export function SolarDownloadMinimalisticBoldDuotone(
   );
 }
 
-export function SolarSendSquareBoldDuotone(props: SVGProps<SVGSVGElement>) {
+export function IconamoonSendDuotone(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -157,15 +157,20 @@ export function SolarSendSquareBoldDuotone(props: SVGProps<SVGSVGElement>) {
       viewBox="0 0 24 24"
       {...props}
     >
-      <path
-        fill="currentColor"
-        d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12"
-        opacity=".5"
-      ></path>
-      <path
-        fill="currentColor"
-        d="M7.75 8a.75.75 0 0 0-1.5 0v8a.75.75 0 0 0 1.5 0zM17 12.75a.75.75 0 0 0 0-1.5h-5.19l1.72-1.72a.75.75 0 0 0-1.06-1.06l-3 3a.75.75 0 0 0 0 1.06l3 3a.75.75 0 1 0 1.06-1.06l-1.72-1.72z"
-      ></path>
+      <g fill="none">
+        <path
+          fill="currentColor"
+          d="m7.24 4.535l11.944 5.658c1.525.722 1.525 2.892 0 3.614L7.24 19.466c-1.415.67-3.017-.472-2.844-2.028l.58-5.216a2 2 0 0 0 0-.442l-.58-5.216c-.173-1.557 1.429-2.7 2.844-2.029"
+          opacity=".16"
+        ></path>
+        <path
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="m5 12l-.604-5.437C4.223 5.007 5.825 3.864 7.24 4.535l11.944 5.658c1.525.722 1.525 2.892 0 3.614L7.24 19.466c-1.415.67-3.017-.472-2.844-2.028zm0 0h7"
+        ></path>
+      </g>
     </svg>
   );
 }
@@ -183,6 +188,23 @@ export function IcRoundCheck(props: SVGProps<SVGSVGElement>) {
         fill="currentColor"
         d="M9 16.17L5.53 12.7a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0L20.29 7.71a.996.996 0 1 0-1.41-1.41z"
       ></path>
+    </svg>
+  );
+}
+
+export function IconoirWebWindow(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <g fill="none" stroke="currentColor" strokeWidth="1.5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M5 7h1"></path>
+        <path d="M2 17.714V6.286C2 5.023 2.995 4 4.222 4h15.556C21.005 4 22 5.023 22 6.286v11.428C22 18.977 21.005 20 19.778 20H4.222C2.995 20 2 18.977 2 17.714Z"></path>
+      </g>
     </svg>
   );
 }

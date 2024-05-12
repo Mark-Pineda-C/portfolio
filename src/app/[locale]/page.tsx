@@ -14,7 +14,8 @@ import LathamPreview from "@/assets/latham-preview.png";
 import LosChavezPreview from "@/assets/los_chavez_preview.png";
 import RangelPreview from "@/assets/rangel-preview.png";
 import QuatrobusPreview from "@/assets/quatrobus-preview.png";
-import NotSupported from "@/assets/not-suported.png";
+import TurismomerPreview from "@/assets/turismomer-preview.png";
+import PortfolioPreview from "@/assets/portfolio-preview.png";
 
 export default function Home({ params: { locale } }: LocalizedPageProps) {
   unstable_setRequestLocale(locale);
@@ -68,14 +69,14 @@ export default function Home({ params: { locale } }: LocalizedPageProps) {
         </div>
         <div className="max-lg:max-w-[450px] w-full max-lg:place-self-center flex flex-col col-span-1 justify-center lg:col-span-2 lg:col-start-5">
           <div className="flex items-center gap-6">
-            <span className="min-w-14 lg:min-w-20 text-xl lg:text-3xl flex items-center gap-2">
+            <span className="min-w-14 lg:min-w-20 text-3xl lg:text-4xl flex items-center gap-2">
               3 <p className="text-primary-700">+</p>
             </span>
             <span className="font-ubuntu">{t("yoe")}</span>
           </div>
           <Divider className="my-4" />
           <div className="flex items-center gap-6">
-            <span className="min-w-14 lg:min-w-20 text-xl lg:text-3xl flex items-center gap-2">
+            <span className="min-w-14 lg:min-w-20 text-3xl lg:text-4xl flex items-center gap-2">
               20 <p className="text-primary-700">+</p>
             </span>
             <span className="font-ubuntu">{t("projects_made")}</span>
@@ -84,7 +85,7 @@ export default function Home({ params: { locale } }: LocalizedPageProps) {
       </section>
       <section
         id="experience"
-        className="container lg:scroll-m-32 py-10 lg:py-20 flex flex-col items-center gap-8"
+        className="container scroll-m-10 lg:scroll-m-32 py-10 lg:py-20 flex flex-col items-center gap-8"
       >
         <h2 className="font-bold text-2xl lg:text-4xl text-primary-700">
           Mi experiencia
@@ -118,7 +119,7 @@ export default function Home({ params: { locale } }: LocalizedPageProps) {
       </section>
       <section
         id="projects"
-        className="container py-10 lg:py-20 flex flex-col max-lg:items-center gap-8"
+        className="container scroll-m-10 lg:scroll-m-20 py-10 lg:py-20 flex flex-col max-lg:items-center gap-8"
       >
         <h2 className="font-bold text-2xl lg:text-4xl text-primary-700">
           {t("latest_projects")}
@@ -126,34 +127,76 @@ export default function Home({ params: { locale } }: LocalizedPageProps) {
         <ProjectSlider
           projects={[
             {
-              title: "Quatrobus",
-              category: "web page",
-              stack: ["Qwik.js", "Tailwind"],
-              thumbnail: QuatrobusPreview,
+              title: t("portfolio"),
+              category: "landing page",
+              stack: ["Next.js", "Tailwind", "NextUI"],
+              thumbnail: PortfolioPreview,
+              links: {
+                github: "https://github.com/Mark-Pineda-C/portfolio",
+              },
+              credits: {
+                name: "Mark Pineda",
+              },
             },
             {
-              title: "Latham Perú",
-              category: "web page",
-              stack: ["Next.js", "Tailwind", "NextUI"],
-              thumbnail: LathamPreview,
+              title: "Turismo Mer",
+              category: "landing page",
+              stack: ["Next.js", "NextUI", "Tailwind"],
+              thumbnail: TurismomerPreview,
+              credits: {
+                name: "Adriana Cerrón",
+                link: "https://www.linkedin.com/in/adriana-cerron-revilla/",
+              },
             },
             {
               title: "Autobuses Los Chavez",
               category: "landing page",
-              stack: ["Next.js", "Tailwind", "NextUI", "Mapbox"],
+              stack: ["Next.js", "Tailwind", "NextUI", "Mapbox", "Tanstack"],
               thumbnail: LosChavezPreview,
+              links: {
+                live: "https://autobusesloschavez.com",
+              },
+              credits: {
+                name: "Fiorella Palomino",
+              },
+            },
+            {
+              title: "Quatrobus",
+              category: "web page",
+              stack: ["Qwik.js", "Tailwind"],
+              thumbnail: QuatrobusPreview,
+              links: {
+                live: "https://quatrobus.com",
+              },
+              credits: {
+                name: "Natalia Rigacci",
+                link: "https://www.linkedin.com/in/natalia-rigacci-a54471178/",
+              },
+            },
+            {
+              title: "Latham Perú",
+              category: "web page",
+              stack: ["Next.js", "Tailwind", "NextUI", "Next Themes"],
+              thumbnail: LathamPreview,
+              links: {
+                live: "https://lathamperu.com.pe",
+              },
+              credits: {
+                name: "Adriana Cerrón",
+                link: "https://www.linkedin.com/in/adriana-cerron-revilla/",
+              },
             },
             {
               title: "Transportes Rangel",
               category: "web page",
               stack: ["Next.js", "Tailwind"],
               thumbnail: RangelPreview,
-            },
-            {
-              title: "TurismoMer",
-              category: "web page",
-              stack: ["Next.js", "NextUI", "Tailwind"],
-              thumbnail: NotSupported,
+              links: {
+                live: "https://transportesrangel.com",
+              },
+              credits: {
+                name: "Fiorella Palomino",
+              },
             },
           ]}
         />
@@ -163,7 +206,7 @@ export default function Home({ params: { locale } }: LocalizedPageProps) {
         className="container py-10 lg:py-20 flex flex-col items-center gap-8 lg:flex-row lg:justify-between"
       >
         <h2 className="font-bold text-2xl lg:text-4xl text-primary-700 text-center lg:text-start">
-          <span className="max-lg:hidden text-2xl">
+          <span className="max-lg:hidden text-xl text-foreground">
             {t("contact.0")} <br />
           </span>
           {t("contact.1")}

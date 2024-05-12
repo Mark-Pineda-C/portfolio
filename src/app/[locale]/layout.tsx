@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import { Orbitron, Ubuntu } from "next/font/google";
 import "../globals.css";
 import { Providers } from "../providers";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import Header from "@/components/header";
 import { useTranslations } from "next-intl";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import Footer from "@/components/footer";
 
 const orbitron = Orbitron({ subsets: ["latin"] });
 const ubuntu = Ubuntu({
@@ -14,10 +17,18 @@ const ubuntu = Ubuntu({
   variable: "--font-ubuntu",
 });
 
-export const metadata: Metadata = {
-  title: "Portafolio personal",
-  description: "Portafolio personal de Mark Pineda",
-};
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 export default function RootLayout({
   children,
@@ -44,7 +55,10 @@ export default function RootLayout({
             }}
           />
           {children}
+          <Footer />
         </Providers>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

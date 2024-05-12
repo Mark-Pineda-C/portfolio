@@ -40,15 +40,26 @@ html {
 }
 
 @media (min-width: 1024px) {
+  .swiper-pagination {
+    width: auto !important;
+  }
   .swiper-pagination-bullet {
     width: 16px !important;
     border-radius: 0.5rem !important;
     transition: 0.3s ease all;
   }
 
+  .swiper-pagination-bullets {
+    transform: translateX(0) !important;
+    left: auto !important;
+  }
+
   .swiper-pagination-bullet-active,
   .dark .swiper-pagination-bullet-active {
     width: 24px !important;
+  }
+  .swiper-pagination-bullet {
+    transform: scale(1) !important;
   }
 }
 .swiper-pagination-bullet-active,

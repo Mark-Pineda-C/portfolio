@@ -9,7 +9,7 @@
     },
     "hello": "Hello, my name is Mark Pineda",
     "title": "Front-end developer",
-    "more_info": "More Info",
+    "more_info": "know me",
     "socials": "My socials",
     "about_title": "About me",
     "about_me": "I'm a software developer focused on web technologies, with great passion for modern technologies, I like to participate in projects that involve a challenge to knowledge. My goal is to continually learn and build impactful solutions to share with the world.",
@@ -20,9 +20,9 @@
       "0": {
         "title": "Front-End Development",
         "text": {
-          "0": "Implementation and development of web pages, landing pages and client platforms.",
-          "1": "Optimization and migration of legacy pages to new technologies.",
-          "2": "Research and development of new technologies to support the company's central system."
+          "0": "Implementation and development of web pages, landing pages and client platforms",
+          "1": "Optimization and migration of legacy pages to new technologies",
+          "2": "Research and development of new technologies to support the company's central system"
         }
       },
       "1": {
@@ -43,6 +43,11 @@
       "message": "Message",
       "send": "Send",
       "complete_error": "Complete this field"
-    }
+    },
+    "portfolio": "Portfolio"
+  },
+  "Metadata": {
+    "title": "Mark Pineda - Personal Portfolio",
+    "description": "Welcome to my portfolio. \nI am Mark Pineda, Front-End Developer with more than 3 years of experience."
   }
 }

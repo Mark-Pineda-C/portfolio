@@ -44,7 +44,9 @@ export default function Header({ translations }: Props) {
 
   return (
     <Navbar onMenuOpenChange={setIsOpen} isMenuOpen={isOpen}>
-      <NavbarBrand className="text-2xl">Mark Pineda</NavbarBrand>
+      <NavbarBrand as="a" href="#" className="text-2xl">
+        Mark Pineda
+      </NavbarBrand>
       <NavbarContent
         className="max-md:hidden flex gap-4 font-ubuntu"
         justify="center"

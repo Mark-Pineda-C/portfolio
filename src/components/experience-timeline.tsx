@@ -32,14 +32,16 @@ export default function ExperienceTimeline({ jobs }: Props) {
             <p className="text-content4 text-small font-ubuntu">
               {job.company}
             </p>
-            {job.description.map((desc, idx) => (
-              <p
-                key={`job_${index}_desc_${idx}`}
-                className="mt-3 font-ubuntu text-small"
-              >
-                {desc}
-              </p>
-            ))}
+            <ul className="pl-6 space-y-3 mt-3">
+              {job.description.map((desc, idx) => (
+                <li
+                  key={`job_${index}_desc_${idx}`}
+                  className="list-disc font-ubuntu text-small"
+                >
+                  {desc}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       ))}
