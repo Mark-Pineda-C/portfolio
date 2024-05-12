@@ -88,7 +88,7 @@ export default function Home({ params: { locale } }: LocalizedPageProps) {
         className="container scroll-m-10 lg:scroll-m-32 py-10 lg:py-20 flex flex-col items-center gap-8"
       >
         <h2 className="font-bold text-2xl lg:text-4xl text-primary-700">
-          Mi experiencia
+          {t("my_experience")}
         </h2>
         <ExperienceTimeline
           jobs={[

@@ -44,7 +44,8 @@
       "send": "Send",
       "complete_error": "Complete this field"
     },
-    "portfolio": "Portfolio"
+    "portfolio": "Portfolio",
+    "my_experience": "My experience"
   },
   "Metadata": {
     "title": "Mark Pineda - Personal Portfolio",
