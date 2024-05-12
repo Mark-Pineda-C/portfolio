@@ -173,10 +173,12 @@ function ProjectCard({
       </Modal>
       <Card
         isPressable
-        onPress={onOpen}
         className="bg-transparent shadow-none p-2 !flex !flex-col !gap-2"
       >
-        <div className="relative w-full aspect-video rounded-medium overflow-hidden">
+        <div
+          onClick={onOpen}
+          className="relative w-full aspect-video rounded-medium overflow-hidden"
+        >
           <Image
             src={thumbnail}
             alt={title}
