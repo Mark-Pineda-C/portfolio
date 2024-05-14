@@ -3,16 +3,16 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://mark-pineda.dev",
+      url: "https://mark-pineda.dev/es",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,
-      alternates: {
-        languages: {
-          es: "https://mark-pineda.dev/es",
-          en: "https://mark-pineda.dev/en",
-        },
-      },
+    },
+    {
+      url: "https://mark-pineda.dev/en",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 1,
     },
   ];
 }
