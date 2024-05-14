@@ -21,12 +21,25 @@ export async function generateMetadata({
   params: { locale },
 }: {
   params: { locale: string };
-}) {
-  const t = await getTranslations({ locale, namespace: "Metadata" });
+}): Promise<Metadata> {
+  const t = await getTranslations({ locale });
 
   return {
-    title: t("title"),
-    description: t("description"),
+    title: t("Metadata.title"),
+    description: t("Metadata.description"),
+    keywords: [
+      "Mark Pineda",
+      "Mark",
+      "Pineda",
+      "Software Engineer",
+      "Developer",
+      "Web Developer",
+      "Frontend Developer",
+      "Fullstack Developer",
+      "React",
+      "Next.js",
+      "Web Development",
+    ],
   };
 }
 

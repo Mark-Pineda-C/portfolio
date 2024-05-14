@@ -158,6 +158,7 @@ export default function Home({ params: { locale } }: LocalizedPageProps) {
               },
               credits: {
                 name: "Fiorella Palomino",
+                link: "https://www.linkedin.com/in/fiorella-jeannette-palomino-huallpa-6a84171a7/",
               },
             },
             {
@@ -196,6 +197,7 @@ export default function Home({ params: { locale } }: LocalizedPageProps) {
               },
               credits: {
                 name: "Fiorella Palomino",
+                link: "https://www.linkedin.com/in/fiorella-jeannette-palomino-huallpa-6a84171a7/",
               },
             },
           ]}
