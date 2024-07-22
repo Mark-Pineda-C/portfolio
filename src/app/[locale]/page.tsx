@@ -203,7 +203,7 @@ export default function Home({ params: { locale } }: LocalizedPageProps) {
           ]}
         />
       </section>
-      <section
+      {/* <section
         id="contact"
         className="container py-10 lg:py-20 flex flex-col items-center gap-8 lg:flex-row lg:justify-between"
       >
@@ -221,7 +221,7 @@ export default function Home({ params: { locale } }: LocalizedPageProps) {
             complete_error: t("contact.complete_error"),
           }}
         />
-      </section>
+      </section> */}
     </>
   );
 }
