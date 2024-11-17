@@ -93,7 +93,7 @@ export default function Home({ params: { locale } }: LocalizedPageProps) {
         <ExperienceTimeline
           jobs={[
             {
-              time: `03 / 22 — ${t("jobs.today")}`,
+              time: `04 / 22 — 07 / 24`,
               title: t("jobs.0.title"),
               company: "MCeTS del Perú",
               description: [
@@ -138,16 +138,16 @@ export default function Home({ params: { locale } }: LocalizedPageProps) {
                 name: "Mark Pineda",
               },
             },
-            {
-              title: "Turismo Mer",
-              category: "landing page",
-              stack: ["Next.js", "NextUI", "Tailwind"],
-              thumbnail: TurismomerPreview,
-              credits: {
-                name: "Adriana Cerrón",
-                link: "https://www.linkedin.com/in/adriana-cerron-revilla/",
-              },
-            },
+            // {
+            //   title: "Turismo Mer",
+            //   category: "landing page",
+            //   stack: ["Next.js", "NextUI", "Tailwind"],
+            //   thumbnail: TurismomerPreview,
+            //   credits: {
+            //     name: "Adriana Cerrón",
+            //     link: "https://www.linkedin.com/in/adriana-cerron-revilla/",
+            //   },
+            // },
             {
               title: "Autobuses Los Chavez",
               category: "landing page",
@@ -225,4 +225,3 @@ export default function Home({ params: { locale } }: LocalizedPageProps) {
     </>
   );
 }
-
